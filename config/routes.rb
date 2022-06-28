@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root 'welcome#index'
-  get "/auth/:privider/callback" => "sessions#create"
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get "/auth/:privider/callback", to: "sessions#create"
+  delete "/logout", to: "sessions#destroy"
 end
