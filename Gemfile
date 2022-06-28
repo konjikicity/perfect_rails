@@ -24,6 +24,13 @@ gem 'jbuilder', '~> 2.7'
 gem 'hamlit-rails'
 gem 'html2haml'
 
+# omniauth
+gem 'omniauth'
+gem 'omniauth-github'
+
+# omniauth csrf protection CVE-2015-9284
+gem 'omniauth-rails_csrf_protection'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
