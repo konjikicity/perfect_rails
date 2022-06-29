@@ -1,11 +1,11 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate
-  helper_method :logged_in?
+  helper_method :logged_in?, :current_user
 
   private
 
   def logged_in?
-    !!current_user #session[:user_id]に値が入っていればログインとしてtrue
+    !!current_user
   end
 
   def current_user
