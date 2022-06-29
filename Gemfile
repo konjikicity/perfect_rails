@@ -31,6 +31,9 @@ gem 'omniauth-github'
 # omniauth csrf protection CVE-2015-9284
 gem 'omniauth-rails_csrf_protection'
 
+# i18n
+gem 'rails-i18n'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
