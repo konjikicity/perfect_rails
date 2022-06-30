@@ -7,8 +7,12 @@ class Event < ApplicationRecord
   validates :end_at, presence: true
   validate :start_at_should_be_before_end_at
 
-  scope :start_at, -> { where("start_at > ?", Time.zone.now).order(:start_at) }
-
+  scope :order_start_at, -> { where("start_at > ?", Time.zone.now).order(:start_at) }
+  
+  def created_by?(user)
+    return false unless user
+    owner_id == user.id
+  end
   private
 
   def start_at_should_be_before_end_at
