@@ -24,7 +24,7 @@ class User < ApplicationRecord
       errors[:base] << "公開中の未終了イベントが終了します。"
     end
 
-    if participating_events.where(":now < end_at, now: :now").exists?
+    if participating_events.where(":now < end_at", now: now).exists?
       errors[:base] << "未終了のイベントが存在します。"
     end
 
