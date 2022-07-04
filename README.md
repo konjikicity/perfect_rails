@@ -1,24 +1,15 @@
-# README
+# AwesomeEvents
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## https://awesome-event-sample.herokuapp.com/
 
-Things you may want to cover:
+パーフェクトRuby on Railsのサンプルアプリをgitで管理
+herokuにデプロイしました
 
-* Ruby version
+### 機能詳細
+#### User
+- github認証
+- 退会機能
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Event
+- イベント登録、編集、削除のCRUD
+- 中間テーブルを作成し、イベントに参加する機能
